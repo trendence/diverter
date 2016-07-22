@@ -17,16 +17,16 @@ all the memory allocated in the subprocess back to the OS.
 class DecadentMemoryConsumer
   …
   
-  # Need a lot of memory 
+  # Needs a lot of memory 
   # to execute some magical
   # task
  
   …
 end
 
-# if the predicate :memory_almost_exceeded? is true, 
-# the block will be executed in a forked suprocess
-# that is terminated afterwards
+# If the predicate :memory_almost_exceeded? evaluates to true, 
+# the block will be executed in a forked subprocess
+# that is forced to terminate afterwards
 Diverter.new(condition: memory_almost_exceeded?) do
   DecadentMemoryConsumer.new
 end
