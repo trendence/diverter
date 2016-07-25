@@ -28,12 +28,12 @@ end
 # the block will be executed in a forked subprocess
 # that is forced to terminate afterwards
 Diverter.new(condition: memory_almost_exceeded?) do
-  DecadentMemoryConsumer.new
+  DecadentMemoryConsumer.perform_memory_expensive_operation
 end
 
 # condition defaults to true, so this is equivalent of condition set to true
 Diverter.new do
-  DecadentMemoryConsumer.new
+  DecadentMemoryConsumer.perform_memory_expensive_operation
 end
 ```
 
