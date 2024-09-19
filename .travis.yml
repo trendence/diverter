@@ -1,6 +1,0 @@
-language: ruby
-rvm:
-  - 2.3.0
-notifications:
-  webhooks:
-    - https://absolventa.slack.com/services/hooks/travis?token=Z2hZ1ASmDqxk8vFD8ps12nfi
