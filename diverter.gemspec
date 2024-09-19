@@ -6,8 +6,8 @@ require 'diverter/version'
 Gem::Specification.new do |spec|
   spec.name          = "diverter"
   spec.version       = Diverter::VERSION
-  spec.authors       = ["Robin Neumann\n"]
-  spec.email         = ["robin.neumann@absolventa.de"]
+  spec.authors       = ["Robin Stammer\n"]
+  spec.email         = ["robin.stammer@posteo.de"]
   spec.summary       = %q{Lightweight tool for execution of Ruby code in a forked Ruby process}
   spec.description   = %q{Lightweight tool for execution of Ruby code in a forked Ruby process}
   spec.homepage      = ""
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
 end
